@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UMMB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="css/simple-line-icons.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+ 
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+      
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- <button class="btn btn-default navbar-btn" type="button"><a href="aboutus"><b>WATCH LIVE</b></a></button> -->
+                    <ul class="nav navbar-nav">
+                        <!-- <li><a href="#myPage" style="color:red"><b>WA Live</b></a></li> -->
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/list_location">Location</a></li>
+                        <li><a href="/count_battle">Count Battle</a></li>
+                        <!-- <li><a href="/search">Search</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+    </nav>
+    <br><br><br>
+
+    <body>
+        <br class="visible-xs" /><br class="visible-lg" />
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-info cg-pnl1-dashboard">
+                <div class="panel-heading text-center cg-pn2-dashboard panel-header">
+                    <b class="h4">BULK UPLOAD</b>
+                </div>
+                <div class="form-style">
+                    <form action="/bulk_upload" method="post" name="bulk_upload" id="bulk_upload" enctype="multipart/form-data">
+                        <div class="form-group row">
+                            <div class="col-md-2">
+                                <span id="file_name"><b>File Name</b></span>
+                            </div>
+                            <div class="col-md-3 ">
+                                <center><input type="file" class="filestyle" data-buttonName="btn-primary" name="memberdata" id="memberdata" data-icon="false" accept=".csv" required=""></center>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <center>
+                                <button type="submit" id="submit" class="flat-butt flat-info-butt flat-border-butt flat-info-border-butt" onclick="">SUBMIT</button>
+                                <br class="visible-xs" /><br class="visible-xs" />
+                            </center>
+                        </div>
+                        <br class="visible-lg">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--  MODEL START-->
+        <!--  -->
+        <div class="modal fade" id="successDialog" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="successtile" style="color:black;">Error</h4>
+                    </div>
+                    <div class="modal-body">
+                        <center><img src="./images/success.png"></center>
+                        <br>
+                        <p id="successText" style="color:green;text-align:center;font-size:13pt"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" style="padding:10dp" class="btn btn-success" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="planStatus" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="errorTitle" style="color:black;">Error</h4>
+                    </div>
+                    <div class="modal-body">
+                        <center><img src="./images/error.png" height="70" width="70"></center>
+                        <br>
+                        <p id="planMsg" style="color:red;text-align:center;font-size:13pt"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" style="padding:10dp" class="btn btn-danger" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+
+    </body>
+
+</html>
+<script type='text/javascript'>
+    // $(function() {
+    //     $('form[name=bulk_upload]').submit(function() {
+    //         $.ajax({
+    //             type: 'POST',
+    //             url: $(this).attr('action'),
+    //             data: $(this).serialize(),
+    //             dataType: "json",
+    //             success: function(resultData) {
+    //                 if (resultData.success == true) {
+
+    //                     $('#successtile').text('Success');
+    //                     $('#successText').html(resultData.msg);
+    //                     $('#successDialog').modal('show');
+
+    //                     console.log('result: ', resultData);
+
+    //                 } else if (resultData.success == false) {
+    //                     $('#errorTitle').text('Error');
+    //                     $('#planMsg').html(resultData.msg);
+    //                     $('#errorDialog').modal('show');
+
+    //                 }
+
+    //             },
+    //             error: function() {
+    //                 //alert("Something went wrong");
+    //                 $('#errorTitle').text('Error');
+    //                 $('#planMsg').html("Internal Server Error");
+    //                 $('#errorDialog').modal('show');
+    //             }
+    //         });
+    //         return false;
+    //     });
+    // });
+</script>

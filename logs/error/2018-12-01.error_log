@@ -1,0 +1,20 @@
+2018-12-01 10:52:06 - error: Error in selectquery : Error: connect ETIMEDOUT 192.168.175.23:5432
+2018-12-01 10:52:45 - error: Error in selectquery : Error: connect ETIMEDOUT 192.168.175.23:5432
+2018-12-01 10:58:19 - error: Error in selectquery : error: column "darry" does not exist
+2018-12-01 11:09:44 - error: Error in selectquery : error: syntax error at end of input
+2018-12-01 11:19:04 - error: Error in selectquery : error: column "darry" does not exist
+2018-12-01 14:54:35 - error: Error in selectquery : error: column reference "attacker_outcome" is ambiguous
+2018-12-01 15:11:44 - error: Error in selectquery : ReferenceError: cosnsole is not defined
+2018-12-01 15:12:00 - error: Error in selectquery : ReferenceError: cosnsole is not defined
+2018-12-01 15:20:57 - error: Error in selectquery : SyntaxError: Unexpected token o in JSON at position 1
+2018-12-01 15:39:45 - error: Error in selectquery : SyntaxError: Unexpected token o in JSON at position 1
+2018-12-01 15:45:41 - error: Error in selectquery : TypeError: Cannot read property 'get_status' of undefined
+2018-12-01 15:47:21 - error: Error in selectquery : SyntaxError: Unexpected token u in JSON at position 0
+2018-12-01 15:48:06 - error: Error in selectquery : SyntaxError: Unexpected token u in JSON at position 0
+2018-12-01 15:48:54 - error: Error in selectquery : SyntaxError: Unexpected token o in JSON at position 1
+2018-12-01 15:49:24 - error: Error in selectquery : SyntaxError: Unexpected token o in JSON at position 1
+2018-12-01 15:50:03 - error: Error in selectquery : SyntaxError: Unexpected token o in JSON at position 1
+2018-12-01 16:02:15 - error: Error in selectquery : TypeError: Cannot set property 'win' of undefined
+2018-12-01 16:14:02 - error: Error in selectquery : SyntaxError: Unexpected token [ in JSON at position 18
+2018-12-01 16:18:07 - error: Error in selectquery : error: subquery must return only one column
+2018-12-01 16:18:28 - error: Error in selectquery : error: subquery must return only one column

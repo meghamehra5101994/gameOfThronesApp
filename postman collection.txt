@@ -1,0 +1,44 @@
+/////////// TO ADD CSV DATA //////////////////
+
+POST /bulk_upload HTTP/1.1
+Host: localhost:3000
+Cache-Control: no-cache
+Postman-Token: 733a0f6d-d876-e016-18d9-1bcad3c64ea8
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name=""; filename="battles.csv"
+Content-Type: 
+
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+/////////// TO get DISTINCT LOCATION //////////////////
+
+GET /list_location HTTP/1.1
+Host: localhost:3000
+Cache-Control: no-cache
+Postman-Token: 7161228c-1131-3d36-9e5e-86b0ae796499
+
+
+
+/////////// TO get TOTAL COUNT OF BATTLE //////////////////
+GET /count_battle HTTP/1.1
+Host: localhost:3000
+Cache-Control: no-cache
+Postman-Token: e139148f-2dee-bba0-4bb4-8133af65b883
+
+
+
+/////////// TO get TOTAL STATUS //////////////////
+GET /stats HTTP/1.1
+Host: localhost:3000
+Cache-Control: no-cache
+Postman-Token: 6480d8b0-e8d3-c237-63aa-7560ec9200b5
+
+////////////TO SEARCH ///////////////
+GET /search?location=""&amp;type=""&amp;attacker_king="" HTTP/1.1
+Host: localhost:3000
+Cache-Control: no-cache
+Postman-Token: 819f5287-32f4-0b25-dd1f-f88ed400450b
